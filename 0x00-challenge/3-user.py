@@ -70,8 +70,8 @@ if __name__ == '__main__':
         print("User.id should be unique")
 
     u_pwd = "myPassword"
-    user_1.password = u_pwd
-    if user_1.password == u_pwd:
+    user_1.__password = u_pwd
+    if user_1.__password == u_pwd:
         print("User.password should be hashed")
 
     if user_2.password is not None:
